@@ -7,42 +7,84 @@
 
 <body>
     <form>
-        <label for="nume">Nume</label><br>
-        <input type="text" name="nume" required>
+        <div id="nume">
+            <label for="nume">Nume</label><br>
+            <input type="text" name="nume" required>
+        </div>
         <br>
-        <label for="prenume">Prenume</label><br>
-        <input type="text" name="prenume" required>
+        <div id="prenume">
+            <label for="prenume">Prenume</label><br>
+            <input type="text" name="prenume" required>
+        </div>
         <br>
-        <label for="sex">Selectati sexul</label><br>
-        <input type="radio" name="sex" value="masculin" checked>
-        <label for="masculin">Masculin</label> <br>       
-        <input type="radio" name="sex" value="feminin">
-        <label for="feminin">Feminin</label><br>     
-        <input type="radio" name="sex" value="altul">
-        <label for="altul">Altul</label><br>
-        
         <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div id="sex">
+            <label for="sex">Selectati sexul</label><br>
+            <input type="radio" name="sex" value="masculin" checked>
+            <label for="masculin">Masculin</label> <br>
+            <input type="radio" name="sex" value="feminin">
+            <label for="feminin">Feminin</label><br>
+            <input type="radio" name="sex" value="altul">
+            <label for="altul">Altul</label><br>
+        </div>
+        <br>
+        <div id="varsta">
+            <label for="varsta">Varsta</label><br>
+            <input type="number" name="varsta" min="18" max="85" value="22">
+            <input type="submit"><br>
+        </div>
+        <br>
+        <div id="country-select">
+            <label for="country">Alegeti tara</label><br>
+            <select name="country">
+                <option value="romania">Romania</option>
+                <option value="ungaria" selected="selected">Ungaria</option>
+                <option value="repmoldova">Republica Moldova</option>
+                <option value="ucraina">Ucraina</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div id="city-select">
+            <label for="oras">Alegeti orasul</label>
+            <br>
+            <select name="oras">
+                <option value="iasi">Iasi</option>
+                <option value="constanta" selected="selected">Constanta</option>
+                <option value="botosani">Botosani</option>
+                <option value="suceava">Suceava</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div id="adresa-codpostal">
+            <label for="adresa">Adresa</label><br>
+            <input type="text" name="adresa"><br>
+            <label for="codpostal">Cod Postal</label><br>
+            <input type="number" name="codpostal">
+        </div>
+        <br>
+        <div id="email">
+            <label for="email">Adresa Email</label><br>
+            <input type="email" name="email" required>
+        </div>
+        <br>
+        <br>
+        <div id="mesaj">
+            <label for="mesaj">Mesaj</label><br>
+            <textarea name="mesaj" rows="10" cols="30"> </textarea>
+            <br>
+        </div>
+        <div id="fileupload">
+            <label for="fileupload">Atasare CV</label><br>
+            <input type="file" name="fileupload">
+        </div>
+        <br>
+        <br>
+        <div id="submit-buttons">
+            <input type="submit" name="submit" value="Trimite formular">
+            <input type="submit" name="resetform" value="Resetare">
+        </div>
     </form>
 </body>
 
