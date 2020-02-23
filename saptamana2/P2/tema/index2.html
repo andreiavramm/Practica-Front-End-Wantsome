@@ -6,22 +6,57 @@
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <h1>Travel reservation form</h1>
+    <h2>*denotes mandatory</h2>
+    <form>
+        <div id="fullname">
+            <label for="fullname">Full name*:</label><br>
+            <input type="text" name="fullname" placeholder="FirstName LastName" required><br>
+        </div>
+        <div id="email">
+            <label for="email">Email address*:</label><br>
+            <input type="email" name="email" placeholder="EMAIL_ADDRESS" required><br>
+        </div>
+        <div id="tourpackage">
+            <label for="tourpackage">Select Tour Package*:</label><br>
+            <select name="tourpackage" required>
+                <option value="Goc">Goc</option>
+                <option value="Goa" selected>Goa</option><br>
+            </select>
+        </div>
+        <div id="arrival_date">
+            <label for="arrival_date">Arrival date*:</label><br>
+            <input type="text" name="arrival_date" placeholder="m/d/y" required><br>
+        </div>
+        <div id="npersons">
+            <label for="npersons">Number of persons*:</label><br>
+            <input type="number" name="npersons" placeholder="UNKNOWN_TYPE" required> <br>
+        </div>
+        <div id="checkbox">
+            <!-- nu pot pune required pe checkbox cu optiuni multiple fara JS sau jQuery. cel putin nu am aflat cum. :) -->
+            <label for="checkbox">What would you want to avail?*</label><br>
+            <label for="checkbox1">Boarding</label>
+            <input type="checkbox" name="checkbox1" value="boarding"><br>
+            <label for="checkbox2">Fooding</label>
+            <input type="checkbox" name="checkbox2" value="fooding"><br>
+            <label for="checkbox3">Sight seeing</label>
+            <input type="checkbox" name="checkbox3" value="sightseeing"><br>
+        </div>
+        <div id="discount_coupon">
+            <label for="discount_coupon">Discount Coupon code:</label><br>
+            <input type="text" name="discount_coupon" placeholder="UNKNOWN_TYPE"><br>
+        </div>
+        <div id="terms">
+            <label for="terms">Terms and conditions*</label><br>
+            <input type="radio" checked name="terms" value="i_agree" required>
+            <label for="i_agree">I agree</label>
+            <input type="radio" name="terms" value="i_disagree" required>
+            <label for="i_disagree">I disagree</label> <br>
+        </div>
+        <div id="submit">
+            <input type="submit" value="Complete reservation">
+        </div>
+    </form>
 </body>
-
-
-
 
 </html>
