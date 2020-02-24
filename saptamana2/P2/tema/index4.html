@@ -3,25 +3,56 @@
 
 <head>
     <title>S2P2 Tema 4</title>
+    <meta charset="UTF-8">
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <h1>My feedback form</h1>
+    <form>
+        <label for="name">&nbsp; &nbsp; &nbsp; &#9679; Name:</label>
+        <input type="text" name="name" style="inline-size: 11em;"><br>
+        <label for="email"> &nbsp; &nbsp; &nbsp; &#9679; Email:</label>
+        <input type="text" name="email" style="inline-size: 11em;"><br>
+        <label for="password">&nbsp; &nbsp; &nbsp; &#9679; Password:</label>
+        <input type="password" name="password" style="inline-size: 11em;"><br>
+        <br>
+        <label for="emotions">&nbsp; &nbsp; &nbsp; &#9679; Please check all the emotions that apply to you:</label><br>
+        <label for="angry">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Angry</label>
+        <input type="checkbox" name="angry" checked><br>
+        <label for="sad">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Sad</label>
+        <input type="checkbox" name="sad"><br>
+        <label for="happy">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Happy</label>
+        <input type="checkbox" name="happy"><br>
+        <label for="ambivalent">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Ambivalent</label>
+        <input type="checkbox" name="ambivalent"><br>
+        <label for="satisfaction_level">&nbsp; &nbsp; &nbsp; &#9679; How satisfied were you with our service?</label><br>
+        <label for="very">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Very satisfied</label>
+        <input type="radio" name="very" checked><br>
+        <label for="satisfied">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Satisfied</label>
+        <input type="radio" name="satisfied"><br>
+        <label for="didnt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Didn't care</label>
+        <input type="radio" name="didnt"><br>
+        <label for="diss">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Dissatisfied</label>
+        <input type="radio" name="diss"><br>
+        <label for="very_diss">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#9679; Very dissatisfied</label>
+        <input type="radio" name="very_diss"><br>
+        <br>
+        <br>
+        <label for="comments">&nbsp; &nbsp; &nbsp; &#9679; Further comments:</label>
+        <textarea name="comments" rows="3" cols="25" style="margin-top: -2.5em;"></textarea><br>
+        <br>
+        <label for="biophoto">&nbsp; &nbsp; &nbsp; &#9679; Bio photo:</label>
+        <input type="text" name="biophoto">
+        <input type="submit" name="biophoto" value="Choose"><br>
+        <label for="location">&nbsp; &nbsp; &nbsp; &#9679; Location visited:</label>
+        <select name="location">
+            <option value="location1">Select location</option>
+            <option value="location2">Dincolo</option>
+        </select><br>
+        <br>
+        <label for="submit_button">&#9679;</label>
+        <input type="button" value="Submit">
+    </form>
 </body>
-
-
 
 </html>
