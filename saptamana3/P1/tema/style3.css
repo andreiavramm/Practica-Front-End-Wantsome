@@ -1,0 +1,21 @@
+* {
+    font-family: "roboto mono";
+    font-size: 17px;   
+}
+
+select[name="dated"] {
+    font-size: 22px;
+    background-color: tomato;    
+}
+
+label:hover {
+    color: teal;
+}
+
+input:hover {
+    color: tomato;    
+}
+
+.searchButton {
+    border-radius: 35px;
+}

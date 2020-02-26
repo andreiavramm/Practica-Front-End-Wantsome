@@ -1,0 +1,64 @@
+li:nth-of-type(even) {
+    color: green;
+}
+
+li:nth-child(3) {
+    background-color: lightblue;
+}
+
+li:nth-child(1) {
+    border-top-style: solid;
+    border-top-color: green;
+    border-top-width: 1px;
+}
+
+li:last-child {
+    border-bottom-color: blue;
+    border-bottom-style: dotted;
+    border-bottom-width: 5px;
+}
+
+li:nth-child(3) a {
+    color: red;
+}
+
+li:nth-child(5) a {
+    color: red;
+}
+
+li:hover:nth-child(5) {
+    color: grey;
+}
+
+li:nth-child(2) {
+    list-style-type: none;
+}
+
+li:nth-child(5) {
+    list-style-type: none;
+}
+
+input[type="text"]:focus {
+    background-color: grey;    
+}
+
+div:nth-of-type(1) input {
+    color: green;
+}
+
+div:nth-of-type(2) input {
+    color: blue;
+}
+
+input[type="password"] {
+    color: transparent;    
+}
+
+input[type="email"]::selection {
+    background-color: yellow;
+    color: pink;    
+}
+
+input[type="submit"]:hover {
+    color: red;
+}

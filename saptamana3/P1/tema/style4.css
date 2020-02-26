@@ -1,0 +1,16 @@
+* {
+    font-family: yeon sung;
+    font-size: 16px;
+    background-color: azure;
+}
+
+input[type="button"] {
+    font-family: bitter;
+    border-radius: 25px;
+    background-color: turquoise;
+}
+
+.textBackground {
+    background-color: turquoise;
+}
+
