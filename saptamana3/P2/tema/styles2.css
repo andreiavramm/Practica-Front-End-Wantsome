@@ -1,0 +1,11 @@
+div {
+    border: 10px dotted red;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 380px;
+    background-image: url(https://images.ctfassets.net/cnu0m8re1exe/01HXLPJ0mE7825Uh4yxSf1/71db61502410aa9da236120a6795b3b9/giraffe.jpg?w=650&h=433&fit=fill);
+    background-clip: content-box;
+  }
