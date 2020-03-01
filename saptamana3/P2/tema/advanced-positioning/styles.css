@@ -34,7 +34,7 @@ body {
 .item-absolute {
     position: absolute;
     top: 10px;
-    left: 300px;
+    left: 10px;
 }
 
 .absolute {
@@ -43,6 +43,7 @@ body {
 
 .item-fixed {
     position: fixed;
-    bottom: 0;
+    bottom: o;
     right: 0;
 }
+

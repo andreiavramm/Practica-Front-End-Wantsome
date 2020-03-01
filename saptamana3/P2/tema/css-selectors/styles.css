@@ -13,7 +13,9 @@
     font-style: normal;
 }
 
-.button {
+.button:link, .button:visited {
+    display: block;
+    text-decoration: none;
     color: #FFF;
     background-color: #5995DA;
     font-weight: bold;
@@ -41,7 +43,52 @@
     color: #eeb75a;
 }
 
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995da;
+}
+
 .page {
     width: 600px;
     margin:0 auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited:hover {
+    color: orange;
+}
+
+a:visited:active {
+    color: red;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+.page > p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+}
+
+#button-2 {
+    color: #5d6063;
 }
