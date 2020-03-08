@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+ .gridPractice {
+     display: grid;     
+     width: 100%;
+     height: 100%;
+     gap: 10px; 
+     justify-items: stretch;      
+ }
+
+ .vertical {
+     grid-column: 1 / 4;
+     grid-row: 1 / 3;
+     background-color: rgb(29, 156, 144);
+     color: #FFF;
+     display: list-item;
+     padding-left: 20px;
+     padding-top: 20px;
+     
+ }
+
+ .bottom {
+     grid-column: 1 / 4;
+     grid-row: 3 / 6;
+     background-color: rgb(241, 241, 47);
+     display: list-item;
+     padding-top: 20px;
+     padding-left: 20px;
+ }
+
+ .wide {
+     grid-column: 1 / 6;
+     grid-row: 6 / 12;
+     background-color: rgb(212, 59, 90);
+     color: #FFF;
+     display: grid;
+     padding-left: 20px;
+     padding-top: 20px;
+     padding-bottom: 180px;
+     padding-right: 20px;
+ }
+
+ .middle {
+     grid-column: 4 / 6;
+     grid-row: 1 / 6;
+     color: #FFF;
+     background-color: rgb(15, 117, 180);
+     justify-content: space-evenly;
+     display: grid;
+     padding: 20px;
+     padding-bottom: 50px;
+ }
+
+ .tall {
+     grid-column: 6 / 11;
+     grid-row: 1 / 12;
+     color: #FFF;
+     background-color: rgb(23, 143, 23);
+     display: list-item;
+     padding: 20px
+ }
+
+ 

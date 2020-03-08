@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {       
+    height: 100%;  
+}
+
+body {
+    background-color: rgb(202, 231, 202);
+}
+
+header {
+    height: 70px;
+    background-color: rgb(21, 136, 21);
+    display: flex;    
+    justify-content: center;
+}
+
+footer {
+    height: 70px;
+    background-color: rgb(21, 136, 21);
+    display: flex;    
+    justify-content: center;   
+    flex-shrink: 0;   
+}
+
+div {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSection {
+    background-color: rgba(21, 136, 21, 0.7);
+    display: flex;   
+    padding: 10px;
+    justify-content: space-between;
+    flex-grow: 1;
+}   
+
+.div1,
+.div2,
+.div3 {
+    height: 250px;
+    width: 250px;
+    
+}
+
+.div1 {
+    background-image: url(https://www.itl.cat/pngfile/big/6-64395_related-wallpapers-green-wallpaper-full-hd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div2 {
+    background-image: url(https://cdn.hipwallpaper.com/i/37/52/FZKWus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div3 {
+    background-image: url(https://hdblackwallpaper.com/wallpaper/2015/07/green-and-black-abstract-wallpaper-2-high-resolution-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
