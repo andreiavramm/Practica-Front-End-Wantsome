@@ -1,0 +1,32 @@
+BEM - de citit pentru CSS
+
+2 chestii de lucrat la design responsive:
+	- desktop-first aproach(de la dimenisuni maxime la minime)
+	- mobile-first arpoach(scriem media querry progressive de la telefon la PC)
+
+
+accessability natural tab order - > de cautat;
+
+cross-browser compatibility CSS;
+
+cross-device compatibility CSS;
+
+autoprefixer online - tool editare CSS;
+
+memory lookup table;
+
+JavaScript Identity operator;
+
+schimbarea unui tip de date in alt tip (de ex: din 31, facem "31"(tip text)) - se cheama coercion!!!
+
+7 tipuri de date predefinite: null, udnefined, boolean, string, object, symbol, number;
+
+incrementare: b=2 -> b++=b+1 idem pentru decrementare -> b--;
+
+a == b verifica daca e egala valaorea;
+
+a === b verifica daca e egala valoarea si daca tipul de data este aceeasi(string sau number, etc);
+
+de instalat measureIt (in chrome) pentru masurare valori;
+
+
