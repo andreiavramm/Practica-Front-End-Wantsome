@@ -119,3 +119,75 @@ var word = "Mamaliga";
 console.log(word.charAt(6)) //g
 console.log(word.charCodeAt(6)); //103 
 
+// Ex8: Vreau sa am o noua variabla care sa cotina un array format din toate stringurile de mai jos care sunt despartite de '|'
+var cars = "Toyota|Mazda|Tesla|Hyundai|Dacia";
+console.log(cars.split("|"));
+
+//----------------------------------------------------------------------------------------------------------------------
+//some extra fun/practice
+
+var accessory = 88.99;
+var bankBalance = 400.00;
+var amount = 110.00;
+amount = amount * 2;
+if (amount < bankBalance) {
+  console.log('i`ll take it');
+  amount = amount + accessory;
+}
+else {
+  console.log("i can't afford");
+}
+bankBalance = bankBalance - amount;
+console.log(bankBalance.toFixed(2));
+
+//--------------------------------------------------------------------------------------------------------------------
+//while loop
+
+var i = 0;
+while (true) {
+  if (i <= 9) {
+    console.log(i);
+    i = i + 1;
+  }
+  else {
+    break
+  }
+} 
+
+//---------------------------------------------------------------------------------------------------------------------
+// for
+for (var i = 0; i <= 9; i = i + 1) {
+  console.log(i);
+}
+
+//-----------------------------------------------------------------------------------------------------------------------
+//YDKJS practice
+var bankBalance = 1000.00;
+const tax = 0.09;
+const phonePrice = 99.00;
+const accessory = 9.99;
+const spendingThreshold = 300.99;
+var amount = 0;
+function calculateTax(amount) {
+  return amount * tax;
+}
+function returnAmount(amount) {
+  return '$' + amount.toFixed(2);
+}
+while (amount < bankBalance) {
+  amount = amount + phonePrice;
+}
+  if (amount < spendingThreshold) {
+    amount = amount + accessory;
+  }
+
+amount = amount + calculateTax(amount);
+console.log("your purchase" + returnAmount(amount));
+
+if (amount > bankBalance) {
+  console.log("you can't aford this purchase");
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+
+
