@@ -43,6 +43,12 @@ a === b verifica daca e egala valoarea si daca tipul de data este aceeasi(string
 de instalat measureIt (in chrome) pentru masurare valori;---------------done!
 ---------------------------------------------------------------------------
 
+tipuri de functii!!! - named si expressed!
+
+function myFunction(named) / var myFunction = function(expressed);
+
+------------------------------------------------------------------------
+
 
 
 
