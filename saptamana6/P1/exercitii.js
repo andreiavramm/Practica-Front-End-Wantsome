@@ -67,4 +67,76 @@ var hello = {
     sayIt: function() {return console.log(this.text1 + this.text2)}
     };
 
+//Ex4 
+// Creati un obiect cu cateva proprietati
+// "Copiati" obiectul printr-o metoda specifica obiectelor(vedeti pe google) si stocatil intr-o alta variabila
+// Pe obiectul nou adaugam 2 noi proprietati
+// Avem obiectul de mai jos, folosind o metoda pe obiecte faceti "merge" intre cele 2 obiecte si salvati-l sub un nume nou.
+var tropics = {
+  trees: 'palmtrees',
+  sun: 'always',
+  girls: 'the best'
+};
+
+var relaxation = Object.assign(tropics);
+
+relaxation.ocean = "infinite";
+relaxation.sky = "blue";
+
+var myHouse = { 
+  rooms: 3,
+  zone: "Bucium",
+  animals: 1
+};
+
+var dream = {relaxation, myHouse};
+
+// Ex5 
+// Creati un obiect care sa contina un alt obiect in interorul lui cu 2 proprietati
+// Accesati proprietatile acelui obiect si stocati key-le intr-o variabila separata.
+// transformati arrayul intr-un singur string care sa rezulte "proprietatea1 si proprietatea2 apartin obiectului x"
+var car = {
+  wheels: "four",
+  windows: "three",
+  colour: ["beige", "blue"],
+}
+var colours = car.colour;
+function nice()  {
+  return console.log(car.wheels + " si " + car.windows)
+};
+
+nice()
+
+//Ex6
+// Avem obiectul : 
+var myObject = {
+  name: "John",
+  surname: "Applegate",
+  };
+  
+  var sortable = [];
+  for (var object in myObject) {
+    sortable.push([object, myObject[object]]);
+  };
+  
+  sortable.sort(function(a,b) {
+    return a[1] - b[2];
+  });
+  //Adaugati o metoda care sa sorteze cele 2 valori ale numelui.
+
+//Ex7 
+//Faceti o functie constructor
+// Cu functia constructor creati 3 obiecte cu valori diferite
+// Pentru toate valorile din acele obiecte transformatile in litere mari.
+
+function Person(first, last, job,) {
+  this.firstName = first;
+  this.lastName = last;
+  this.job = job;
+};
+
+var ovidiu = new Person("Ovidiu", "Grigoras", "FE Developer");
+var andrei = new Person("Andrei", "Avram", "FE Developer Wannabe");
+var lucian = new Person("Lucian", "Ailenei", "FE Developer");
+
 
