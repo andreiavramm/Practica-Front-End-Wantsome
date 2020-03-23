@@ -367,6 +367,27 @@ function comparison(points) {
 }
 comparison(29)
 //V2
+function assignValor(points) {
+  switch (points !== 0) {
+    case (points > 90): return 'AA';
+    case (points > 80 && points <= 90): return 'AB';
+    case (points > 70 && points <= 80): return 'BB';
+    case (points > 60 && points <= 70): return 'BC';
+    case (points > 50 && points <= 60): return 'CC';
+    case (points > 40 && points <= 50): return 'CD';
+    case (points > 30 && points <= 40): return 'DD';
+    case (points > 1 && points <= 30): return 'FF';
+    default: return 'Number not in range';
+  }
+}
+assignValor(40)
 
 /**6. Scrieti o functie care testeaza daca o anumita data introdusa este in weekend: */
-
+function isWeekend(date) {
+  var today = new Date(date);
+  if (today.getDay() == 6 || today.getDay() == 0) {
+    return "weekend";
+  }
+  return 'not weekend'
+}
+isWeekend('nov 16, 2014')
