@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  form {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+  }
+  
+  form label {
+    display: block;
+    color: #808080;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .fieldDescription {
+    color: black;
+    font-size: 10pt;
+  }
+  
+  .invalid {
+    padding: 10px;
+    border: 1px solid red;
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 10px;
+    background-color: #ffc6c4;
+  }
+  
+  .notShown {
+    display: none;
+  }
+  
+  form input {
+    width: 100%;
+    background-color: #F8F8F8;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
