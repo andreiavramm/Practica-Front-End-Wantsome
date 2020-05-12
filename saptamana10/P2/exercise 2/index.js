@@ -6,14 +6,14 @@ xhttp.send();
 
 const list = document.querySelector('li');
 
-xhttp.onload = function () {
-    const colors = xhttp.response;
-    populateList(colors);
-    colors(colors);
-}
-
 const populateList = (jsonObj)  => {
     const myLi = document.createElement('li');
     myLi.textContent = jsonObj['keys']
     list.appendChild(myLi)
+}
+
+xhttp.onload = function () {
+    const colors = xhttp.response;
+    populateList(colors);
+    colors(colors);
 }

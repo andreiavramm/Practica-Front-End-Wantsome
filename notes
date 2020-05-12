@@ -61,6 +61,18 @@ JS este asincron
 
 ------------------------------------------------
 
+care sunt tipurile de display din CSS: block, inline, inline-block, flexbox, grid, table, none
+
+-----------------------------------------------------------------
+
+care sunt tipurile de positioning: static, absolute, fixed, relative, sticky, initial, inherit
+
+-------------------------------------------------------------------------------------
+
+ce inseamna semantica in HTML: (img, video, media, header, footer, nav, main - semantice), (span, div, br - nonsemantice)
+
+----------------------------------------------------------------------------------------
+
 
 
 
