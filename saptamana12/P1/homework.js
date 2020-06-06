@@ -52,3 +52,35 @@ Trainer.prototype = new Person();
 let ovidiu = new Trainer('JS');
 ovidiu.initialize('Ovidiu');
 ovidiu.teach();
+
+// triunghi.constructor;                 // Triangle(a, b, c)   
+// forma.isPrototypeOf(triunghi);        // true
+// triunghi.getPerimeter();              // 48
+// triunghi.getType();                   // "triunghi"
+
+//cand dau console.log(triunghi.constructor) tre sa printeze Triangle(a,b,c)
+
+function Triangle(a, b, c) {
+  this.a = a
+  this.b = b
+  this.c = c
+  this.type = 'triunghi'
+}
+const forma = {
+  getType: function () {
+      return this.type
+  }
+}
+
+Triangle.prototype = forma;
+Triangle.prototype.constructor = Triangle;
+
+let triunghi = new Triangle(15, 15, 18);
+triunghi.getPerimeter = function () {
+  return this.a + this.b + this.c
+}
+
+console.log(triunghi.constructor);
+console.log(forma.isPrototypeOf(triunghi));
+console.log(triunghi.getPerimeter());
+console.log(triunghi.getType());
